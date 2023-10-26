@@ -17,7 +17,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(https://cdn.discordapp.com/attachments/1166991245902626876/1166991461552767037/tes.jpg?ex=654c807e&is=653a0b7e&hm=203581de76b7513ca7ed20f7a588c2f862a7b676aba560e3c93ba6006942941a&);
+    background-image: url(.img/tes.jpg);
     background-size: cover;
     background-position: center;
     z-index: -1;
