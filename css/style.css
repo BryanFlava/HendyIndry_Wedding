@@ -7,7 +7,7 @@
 body{
     font-size: 1.2rem;
     font-family: 'Work Sans', sans-serif;;
-    min-height: 2000px;
+    min-height: 4000px;
 }
 
 .hero::before {
@@ -17,7 +17,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(https://raw.githubusercontent.com/BryanFlava/Hendy_IndryWeeding/main/img/tes.jpg);
+    background-image: url(https://media.discordapp.net/attachments/1140670292612628501/1170639475978813501/Desain_tanpa_judul_3.png?ex=6559c5f8&is=654750f8&hm=78bc13044c96361daccb6bd4f19dee2fcaa58219368c7b8fd6e0590c55d6bea9&=&width=886&height=591);
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -58,7 +58,138 @@ body{
     color: white;
 }
 
+.mynavbar {
+    background-color: rgba(255 255 255 0.5);
+    backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas {
+    height: 100vh;
+}
+
+.mynavbar .navbar-brand, .mynavbar.offcanvas-title {
+    font-family: 'Sacramento', cursive;
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.home {
+    background-image: url(https://media.discordapp.net/attachments/1140670292612628501/1170637595781382194/Desain_tanpa_judul_2.png?ex=6559c438&is=65474f38&hm=a96df3a814206266dc2737d9af6556a9a334935f39b56fb6d38349dfdb64652e&=&width=886&height=591);
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+
+.home h2{
+    color: var(--pink);
+    font-family: 'Sacramento';
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.home h3{
+    color: #444;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.home p{
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.home .couple {
+    margin-top: 100px;
+}
+
+.home .couple h3 {
+    font-family: 'Sacramento';
+    font-size: 2.4rem;
+    color: var(--pink);
+}
+
+.home .couple img {
+    width: 100%;
+}
+
+.home .heart{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(65px);
+}
+
+.home .heart i{
+    margin: auto;
+    color: var(--pink);
+}
+
+.mynavbar .nav-link{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.info {
+    background-color: var(--bg);
+    color: white;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+.info h2{
+    color: var(--pink);
+    font-family: 'Sacramento';
+    font-size: 5rem;
+    font-weight: bold;
+}
 /* Media Query */
+/* Extra Large */
+@media (max-width: 1200px){
+    .home .heart{
+        transform: translateX(-50%) translateY(45px);
+    }
+}
+
+.info .alamat {
+    font-size: 1.1rem
+}
+
+.info .description{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.info .card {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid #999;
+
+}
+
+.info .card-header {
+    border-bottom: 1px solid #999;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.info .card-body {
+    font-size: 1rem;
+}
+
+.info .card-footer {
+    border-top: 1px solid #999;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+
 /* laptop */
 @media (max-width: 992px){
     html{
@@ -66,6 +197,9 @@ body{
     }
     .simply-countdown>.simply-section{
         padding: 70px;
+    }
+    .home .heart{
+        display: none;
     }
 }
 /* tablet */
@@ -77,6 +211,13 @@ body{
         padding: 60px;
         margin: 5px;
     }
+    .mynavbar .nav-link{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .home .heart{
+        display: none;
+    }
 }
 /* media phone */
 @media (max-width: 576px){
@@ -86,5 +227,12 @@ body{
     .simply-countdown>.simply-section{
         padding: 30px;
         margin: 3px;
+    }
+    .mynavbar .nav-link{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .home .heart{
+        display: none;
     }
 }
