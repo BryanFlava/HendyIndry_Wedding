@@ -251,7 +251,7 @@ body{
 /* laptop */
 @media (max-width: 992px){
     html{
-        font-size: 75%;
+        font-size: 65%;
     }
     .simply-countdown>.simply-section{
         padding: 70px;
@@ -324,7 +324,7 @@ footer a{
 /* media phone */
 @media (max-width: 576px){
     html{
-    font-size: 60%;
+    font-size: 50%;
     }
     .simply-countdown>.simply-section{
         padding: 30px;
